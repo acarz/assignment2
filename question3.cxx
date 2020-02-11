@@ -21,7 +21,7 @@ int main(int argc, char const *argv[])
 
         if (input == 'y')
         {
-            Q.push_back(rand());
+            Q.push_back((float)rand() / (float)RAND_MAX);
         }
         else
         {
@@ -31,7 +31,7 @@ int main(int argc, char const *argv[])
 
     for (int i = 0; i < Q.size(); i++)
     {
-        cout << i << "th value of the vector is " << Q[i] << endl;
+        cout << i << " value of the vector is " << Q[i] << " and memory address is "<<&Q[i]<< endl;
     }
 
 
